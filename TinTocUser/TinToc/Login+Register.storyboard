@@ -746,7 +746,7 @@
                                 <color key="textColor" red="0.23137254900000001" green="0.53333333329999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX9-ck-tkG" customClass="UIButtonX" customModule="GmailDemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX9-ck-tkG" customClass="UIButtonX" customModule="TinToc" customModuleProvider="target">
                                 <rect key="frame" x="40" y="366" width="240" height="43.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -762,7 +762,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q69-Fo-TuV" customClass="UITextFieldLoginX" customModule="GmailDemo" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q69-Fo-TuV" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
                                 <rect key="frame" x="40.5" y="245" width="240" height="34.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -780,10 +780,16 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftImageWidth">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veM-O3-rqF" customClass="UITextFieldLoginX" customModule="GmailDemo" customModuleProvider="target">
-                                <rect key="frame" x="40.5" y="297" width="240" height="34"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veM-O3-rqF" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
+                                <rect key="frame" x="40.5" y="297" width="240" height="33.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -797,10 +803,19 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftImageWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xLeftImage">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quên mật khẩu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5NF-GY-rZX">
-                                <rect key="frame" x="191.5" y="336" width="89" height="11"/>
+                                <rect key="frame" x="191.5" y="335.5" width="89" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5NF-GY-rZX" secondAttribute="height" multiplier="8" id="5LX-o1-K9j"/>
                                 </constraints>
