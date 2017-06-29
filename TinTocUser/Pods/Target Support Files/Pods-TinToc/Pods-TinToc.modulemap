@@ -1,0 +1,6 @@
+framework module Pods_TinToc {
+  umbrella header "Pods-TinToc-umbrella.h"
+
+  export *
+  module * { export * }
+}
