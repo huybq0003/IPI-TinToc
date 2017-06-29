@@ -115,25 +115,89 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oc-Fa-6Dh">
-                                <rect key="frame" x="20" y="100" width="109" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIm-jc-r6f">
+                                <rect key="frame" x="30" y="90" width="315" height="432"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oc-Fa-6Dh">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="jGv-Jt-2og"/>
+                                            <constraint firstAttribute="height" constant="21" id="mZM-Eq-v1e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.56462216377258301" blue="0.9816245436668396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mã số" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CQP-e3-pfI" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="41" width="315" height="30"/>
+                                        <color key="tintColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EEQ-UU-yfA"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_maso"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageWidth">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mã số" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exX-Ul-9WQ" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="81" width="315" height="30"/>
+                                        <color key="tintColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QlF-aA-Yde"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_name"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageWidth">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="0eL-DN-NJH"/>
-                                    <constraint firstAttribute="width" constant="109" id="Q22-8q-650"/>
+                                    <constraint firstItem="exX-Ul-9WQ" firstAttribute="width" secondItem="CQP-e3-pfI" secondAttribute="width" id="4fl-ea-mmX"/>
+                                    <constraint firstItem="CQP-e3-pfI" firstAttribute="leading" secondItem="aIm-jc-r6f" secondAttribute="leading" id="7K5-gy-Hiz"/>
+                                    <constraint firstItem="1oc-Fa-6Dh" firstAttribute="leading" secondItem="aIm-jc-r6f" secondAttribute="leading" id="8kF-Os-UJc"/>
+                                    <constraint firstAttribute="trailing" secondItem="CQP-e3-pfI" secondAttribute="trailing" id="DdR-Zu-vYN"/>
+                                    <constraint firstItem="CQP-e3-pfI" firstAttribute="top" secondItem="1oc-Fa-6Dh" secondAttribute="bottom" constant="20" id="H3Y-gk-Qu0"/>
+                                    <constraint firstItem="exX-Ul-9WQ" firstAttribute="centerX" secondItem="CQP-e3-pfI" secondAttribute="centerX" id="Xd2-MH-yTY"/>
+                                    <constraint firstItem="1oc-Fa-6Dh" firstAttribute="top" secondItem="aIm-jc-r6f" secondAttribute="top" id="o3v-R9-2xi"/>
+                                    <constraint firstItem="exX-Ul-9WQ" firstAttribute="top" secondItem="CQP-e3-pfI" secondAttribute="bottom" constant="10" id="qHy-u9-XAo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.56462216377258301" blue="0.9816245436668396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vfW-Rd-wm2" secondAttribute="trailing" id="44v-2x-t10"/>
-                            <constraint firstItem="1oc-Fa-6Dh" firstAttribute="leading" secondItem="62v-Of-98B" secondAttribute="leading" constant="20" id="P3Y-z5-Dgf"/>
+                            <constraint firstItem="aIm-jc-r6f" firstAttribute="leading" secondItem="62v-Of-98B" secondAttribute="leading" constant="30" id="AVx-JV-LjS"/>
+                            <constraint firstItem="aIm-jc-r6f" firstAttribute="top" secondItem="Sbu-5f-6oI" secondAttribute="bottom" constant="10" id="FWD-JX-d0w"/>
                             <constraint firstItem="M3N-FH-O88" firstAttribute="top" secondItem="vfW-Rd-wm2" secondAttribute="bottom" id="Qu3-9u-clF"/>
+                            <constraint firstAttribute="trailing" secondItem="aIm-jc-r6f" secondAttribute="trailing" constant="30" id="Usy-7b-L0v"/>
                             <constraint firstAttribute="trailing" secondItem="Sbu-5f-6oI" secondAttribute="trailing" id="YrD-pp-hQR"/>
-                            <constraint firstItem="1oc-Fa-6Dh" firstAttribute="top" secondItem="Sbu-5f-6oI" secondAttribute="bottom" constant="20" id="ef1-PB-QpG"/>
                             <constraint firstItem="vfW-Rd-wm2" firstAttribute="leading" secondItem="62v-Of-98B" secondAttribute="leading" id="oCY-1H-kf4"/>
+                            <constraint firstItem="vfW-Rd-wm2" firstAttribute="top" secondItem="aIm-jc-r6f" secondAttribute="bottom" constant="100" id="rtf-tT-sNL"/>
                             <constraint firstItem="Sbu-5f-6oI" firstAttribute="top" secondItem="62v-Of-98B" secondAttribute="top" id="tqj-4J-ia2"/>
                             <constraint firstItem="Sbu-5f-6oI" firstAttribute="leading" secondItem="62v-Of-98B" secondAttribute="leading" id="wLm-xI-zsw"/>
                         </constraints>
@@ -141,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dp-AK-fcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="211"/>
+            <point key="canvasLocation" x="1760.8" y="210.94452773613196"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="maD-yO-2vX">
@@ -951,7 +1015,9 @@
         <image name="button_blue" width="2468" height="524"/>
         <image name="ic_detail" width="134" height="134"/>
         <image name="ic_exit" width="130" height="123"/>
+        <image name="ic_maso" width="123" height="83"/>
         <image name="ic_menu" width="22" height="23"/>
+        <image name="ic_name" width="99" height="102"/>
         <image name="ic_shopinfo" width="97" height="104"/>
         <image name="logo_tab" width="636" height="214"/>
     </resources>

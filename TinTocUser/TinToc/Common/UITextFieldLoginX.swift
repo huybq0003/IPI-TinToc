@@ -83,7 +83,7 @@ class UITextFieldLoginX: UITextField {
         didSet {
             let bottomLine = CALayer()
             bottomLine.frame = CGRect(x: 0.0, y: self.frame.height-1 , width: self.frame.width, height: 1.0)
-            bottomLine.backgroundColor = UIColor.white.cgColor
+            bottomLine.backgroundColor = self.tintColor.cgColor
             self.borderStyle = .none
             self.layer.addSublayer(bottomLine)
         }
