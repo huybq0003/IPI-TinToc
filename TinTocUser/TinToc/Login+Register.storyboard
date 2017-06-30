@@ -92,10 +92,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="458"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C96-dh-j2S">
-                                        <rect key="frame" x="19.5" y="10" width="280" height="35.5"/>
+                                        <rect key="frame" x="19.5" y="9" width="280" height="36.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng điền đầy đủ các thông tin dưới đây" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xb4-yc-Mct">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -109,10 +109,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYo-9n-0RM" userLabel="hoten">
-                                        <rect key="frame" x="19.5" y="50.5" width="280" height="36"/>
+                                        <rect key="frame" x="19.5" y="50.5" width="280" height="36.5"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Họ tên" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjT-d0-KQw" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="36.5"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" red="0.0" green="0.56462216377258301" blue="0.9816245436668396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -161,7 +161,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-uH-wrL" userLabel="phone">
-                                        <rect key="frame" x="20" y="91.5" width="280" height="36.5"/>
+                                        <rect key="frame" x="20" y="92" width="280" height="36.5"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-qw-jpo" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="36.5"/>
@@ -210,10 +210,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXX-fv-oMg" userLabel="email">
-                                        <rect key="frame" x="20" y="133" width="280" height="36.5"/>
+                                        <rect key="frame" x="20" y="133.5" width="280" height="36"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YzH-vT-RKk" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="36"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" red="0.0" green="0.56462216377258301" blue="0.9816245436668396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -518,7 +518,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uq-zy-78I">
-                                                <rect key="frame" x="260" y="9.5" width="20" height="17"/>
+                                                <rect key="frame" x="260" y="10" width="20" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="17" id="Jun-Pz-EGx"/>
                                                     <constraint firstAttribute="width" constant="20" id="aFP-rs-G7m"/>
@@ -530,13 +530,13 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box_capcha" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-Qg-aWK">
-                                                <rect key="frame" x="140" y="3" width="110" height="30"/>
+                                                <rect key="frame" x="140" y="3.5" width="110" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="QdW-7Z-3ip"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MNGQU12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdG-F1-vjT">
-                                                <rect key="frame" x="140" y="3" width="110" height="30"/>
+                                                <rect key="frame" x="140" y="3.5" width="110" height="30"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -729,7 +729,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNA-KP-XEQ" userLabel="BTGG">
-                                <rect key="frame" x="177" y="450" width="112" height="45"/>
+                                <rect key="frame" x="177" y="450" width="112" height="44.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lNA-KP-XEQ" secondAttribute="height" multiplier="2.5" id="0zI-hz-7FO"/>
                                 </constraints>
@@ -758,7 +758,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q69-Fo-TuV" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
-                                <rect key="frame" x="40.5" y="245" width="240" height="34.5"/>
+                                <rect key="frame" x="40" y="245" width="240" height="34.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="q69-Fo-TuV" secondAttribute="height" multiplier="7" id="UJ9-T4-agi"/>
@@ -787,7 +787,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veM-O3-rqF" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
-                                <rect key="frame" x="40.5" y="297" width="240" height="33.5"/>
+                                <rect key="frame" x="40" y="297" width="240.5" height="34"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -822,7 +822,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐĂNG KÝ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-ie-sb0">
-                                <rect key="frame" x="194" y="532" width="80" height="16"/>
+                                <rect key="frame" x="194" y="532.5" width="79.5" height="15.5"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AcM-ie-sb0" secondAttribute="height" multiplier="5" id="yy6-8c-yrl"/>
@@ -848,7 +848,7 @@
                                 </connections>
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quên mật khẩu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5NF-GY-rZX">
-                                <rect key="frame" x="191.5" y="335.5" width="89" height="11"/>
+                                <rect key="frame" x="191" y="336" width="89.5" height="11.5"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5NF-GY-rZX" secondAttribute="height" multiplier="8" id="5LX-o1-K9j"/>
@@ -931,7 +931,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1817" y="109"/>
+            <point key="canvasLocation" x="1815.9420289855075" y="108.42391304347827"/>
         </scene>
     </scenes>
     <resources>

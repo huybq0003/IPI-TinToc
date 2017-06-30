@@ -40,6 +40,7 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,24 +14,21 @@ class BoLoc_MainShop_ViewController: BaseViewController {
     @IBOutlet weak var colBoLoc: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
-    
-    
-    
+
     @IBAction func abtnCancel(_ sender: Any) {
         dismiss()
         
     }
     
     func dismiss() {
-        
         isPresented = false // Set this flag to NO before dismissing controller, so that correct orientation will be chosen for the bottom controller
         self.presentingViewController!.dismiss(animated: true, completion: nil);
     }
     
 }
+
 
 extension BoLoc_MainShop_ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -60,9 +57,8 @@ extension BoLoc_MainShop_ViewController: UICollectionViewDelegate, UICollectionV
     
 }
 
+
 class BoLocCellHeader:UICollectionViewCell {
-    
-    
 }
 
 class BoLocCell:UICollectionViewCell {
@@ -75,6 +71,4 @@ class BoLocCell:UICollectionViewCell {
     @IBAction func abtnDetail(_ sender: Any) {
         
     }
-    
-    
 }

@@ -12,6 +12,7 @@
 		41B768951F02406100D7C566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B768931F02406100D7C566 /* Main.storyboard */; };
 		41B768971F02406100D7C566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B768961F02406100D7C566 /* Assets.xcassets */; };
 		41B7689A1F02406100D7C566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B768981F02406100D7C566 /* LaunchScreen.storyboard */; };
+		8490C9F11F06B24E000213C7 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9F01F06B24E000213C7 /* Function.swift */; };
 		E2F1132A668BB33B6847ABB9 /* Pods_TinToc_Shipper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5D563A24478CE2DCFDE498 /* Pods_TinToc_Shipper.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		41B768991F02406100D7C566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41B7689B1F02406100D7C566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54781BAD9689060DDF8C7E76 /* Pods-TinToc Shipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc Shipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper.release.xcconfig"; sourceTree = "<group>"; };
+		8490C9F01F06B24E000213C7 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		9B354F7A16BBD292D47801B4 /* Pods-TinToc Shipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc Shipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper.debug.xcconfig"; sourceTree = "<group>"; };
 		9E5D563A24478CE2DCFDE498 /* Pods_TinToc_Shipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinToc_Shipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,10 +74,11 @@
 			children = (
 				41B7688F1F02406100D7C566 /* AppDelegate.swift */,
 				41B768911F02406100D7C566 /* ViewController.swift */,
-				41B768931F02406100D7C566 /* Main.storyboard */,
 				41B768961F02406100D7C566 /* Assets.xcassets */,
+				41B768931F02406100D7C566 /* Main.storyboard */,
 				41B768981F02406100D7C566 /* LaunchScreen.storyboard */,
 				41B7689B1F02406100D7C566 /* Info.plist */,
+				8490C9F01F06B24E000213C7 /* Function.swift */,
 			);
 			path = "TinToc Shipper";
 			sourceTree = "<group>";
@@ -123,7 +126,7 @@
 				TargetAttributes = {
 					41B7688B1F02406000D7C566 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = TDCT37QT5P;
+						DevelopmentTeam = MP4JHA4J7N;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -214,6 +217,7 @@
 			files = (
 				41B768921F02406100D7C566 /* ViewController.swift in Sources */,
 				41B768901F02406100D7C566 /* AppDelegate.swift in Sources */,
+				8490C9F11F06B24E000213C7 /* Function.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +339,9 @@
 			baseConfigurationReference = 9B354F7A16BBD292D47801B4 /* Pods-TinToc Shipper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TDCT37QT5P;
+				DEVELOPMENT_TEAM = MP4JHA4J7N;
 				INFOPLIST_FILE = "TinToc Shipper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huybui.TinToc-Shipper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,8 +354,9 @@
 			baseConfigurationReference = 54781BAD9689060DDF8C7E76 /* Pods-TinToc Shipper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TDCT37QT5P;
+				DEVELOPMENT_TEAM = MP4JHA4J7N;
 				INFOPLIST_FILE = "TinToc Shipper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huybui.TinToc-Shipper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,6 +383,7 @@
 				41B768A01F02406100D7C566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

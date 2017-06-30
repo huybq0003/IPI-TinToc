@@ -11,6 +11,8 @@ import GoogleAPIClientForREST
 import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SlideMenuControllerSwift
+
 
 class LoginVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
 
@@ -66,8 +68,27 @@ class LoginVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     }
     
     @IBAction func signInBtnPressed(_ sender: UIButtonX) {
-        GIDSignIn.sharedInstance().signOut()
-        print("logouted")
+//        guard let user = userTxt.text, user != "" else {
+//            showAlert(title: "Warning", message: "Email is not empty")
+//            return
+//        }
+//        guard let password = passwordTxt.text, password != "" else {
+//            showAlert(title: "Warning", message: "Password is not empty")
+//            return
+//        }
+        let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        //        instantiateInitialViewController(withIdentifier: "MainViewController") as! MainViewController
+        
+        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftMenuViewController") as! LeftMenuViewController
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
+        
+        leftViewController.mainVC = nvc
+        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
+        self.present(slideMenuController, animated: true) { 
+            appDelegate.window?.rootViewController = slideMenuController
+        }
+//        showAlert(title: "OK", message: "Login successed!!!")
     }
     
     @IBAction func fbBtnPressed(_ sender: UIButton) {
@@ -107,13 +128,13 @@ class LoginVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     @IBAction func registerBtnPressed(_ sender: UITapGestureRecognizer) {
         animateLable(lable: registerLbl)
         let registerVC = loginStoryboard.instantiateViewController(withIdentifier: "RegisterViewController")
-        
         self.present(registerVC, animated: true, completion: nil)
+//        _ = navigationController?.pushViewController(registerVC, animated: true)
     }
     
     func animateLable(lable: UILabel) {
         let color = lable.textColor
-        UIView.animate(withDuration: 0.5, animations: { 
+        UIView.animate(withDuration: 0.2, animations: {
             lable.alpha = 0.5
             lable.textColor = UIColor.white
         }) { (_) in

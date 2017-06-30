@@ -40,8 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SlideMenuOptions.contentViewScale = 1
         SlideMenuOptions.hideStatusBar = false;
         
-        self.window?.rootViewController = loginVC
+        self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
@@ -100,6 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        print(self.window?.rootViewController?.presentedViewController)
         if self.window?.rootViewController?.presentedViewController is BoLoc_MainShop_ViewController {
             
             let boLoc_MainShop_ViewController = self.window!.rootViewController!.presentedViewController as! BoLoc_MainShop_ViewController
@@ -112,9 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         } else {
             return UIInterfaceOrientationMask.portrait;
-        }
-        
-        
+        }  
     }
 
 }

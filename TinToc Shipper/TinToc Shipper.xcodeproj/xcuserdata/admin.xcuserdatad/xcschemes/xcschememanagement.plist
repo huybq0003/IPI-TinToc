@@ -4,29 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ARSLineProgress.xcscheme</key>
+		<key>TinToc Shipper.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>Pods-TinToc Shipper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14876E8917EFFF790E519A59FF893DE6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>41BB5A18C9EB8F9F59061C97919CF104</key>
+		<key>41B7688B1F02406000D7C566</key>
 		<dict>
 			<key>primary</key>
 			<true/>
