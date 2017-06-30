@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SlideMenuOptions.contentViewScale = 1
         SlideMenuOptions.hideStatusBar = false;
         
-        self.window?.rootViewController = slideMenuController
+        self.window?.rootViewController = loginVC
         self.window?.makeKeyAndVisible()
         return true
     }

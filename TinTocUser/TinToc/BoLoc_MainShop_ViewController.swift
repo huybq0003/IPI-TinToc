@@ -8,16 +8,16 @@
 
 import UIKit
 
-class BoLoc_MainShop_ViewController: UIViewController {
+class BoLoc_MainShop_ViewController: BaseViewController {
     var isPresented = true
     
     @IBOutlet weak var colBoLoc: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     
     
     @IBAction func abtnCancel(_ sender: Any) {
@@ -39,6 +39,7 @@ extension BoLoc_MainShop_ViewController: UICollectionViewDelegate, UICollectionV
         return 10
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         if indexPath.item == 0 {
             let cell = colBoLoc.dequeueReusableCell(withReuseIdentifier: "BoLocCellHeader", for: indexPath)
             
@@ -72,6 +73,7 @@ class BoLocCell:UICollectionViewCell {
     @IBOutlet weak var txtTimeOut: UILabel!
     @IBOutlet weak var txtStatus: UILabel!
     @IBAction func abtnDetail(_ sender: Any) {
+        
     }
     
     

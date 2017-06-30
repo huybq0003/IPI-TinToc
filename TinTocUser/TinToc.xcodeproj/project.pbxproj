@@ -22,7 +22,6 @@
 		416E30701F038D3300F6C1BA /* seguisbi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 416E30641F038D3300F6C1BA /* seguisbi.ttf */; };
 		416E30711F038D3300F6C1BA /* seguisli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 416E30651F038D3300F6C1BA /* seguisli.ttf */; };
 		416E30731F03932900F6C1BA /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E30721F03932900F6C1BA /* UIButtonX.swift */; };
-		416E30751F03990A00F6C1BA /* ShopInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E30741F03990A00F6C1BA /* ShopInfo_ViewController.swift */; };
 		416E30771F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */; };
 		4174FF7F1F0160BE0085A039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174FF7E1F0160BE0085A039 /* AppDelegate.swift */; };
 		4174FF811F0160BE0085A039 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174FF801F0160BE0085A039 /* MainViewController.swift */; };
@@ -45,6 +44,10 @@
 		842D60321F054D64007DD7F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D60311F054D64007DD7F4 /* LoginVC.swift */; };
 		842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D60331F054D6F007DD7F4 /* RegisterVC.swift */; };
 		842D60361F054F0C007DD7F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */; };
+		8490C9E01F0658A9000213C7 /* LineBottomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */; };
+		8490C9E21F0658CD000213C7 /* MaDonHang_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */; };
+		8490C9E61F065914000213C7 /* ShopInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */; };
+		8490C9E71F065914000213C7 /* ThuNhap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +67,6 @@
 		416E30641F038D3300F6C1BA /* seguisbi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisbi.ttf; sourceTree = "<group>"; };
 		416E30651F038D3300F6C1BA /* seguisli.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisli.ttf; sourceTree = "<group>"; };
 		416E30721F03932900F6C1BA /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
-		416E30741F03990A00F6C1BA /* ShopInfo_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopInfo_ViewController.swift; sourceTree = "<group>"; };
 		416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoLoc_MainShop_ViewController.swift; sourceTree = "<group>"; };
 		4174FF7B1F0160BE0085A039 /* TinToc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinToc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4174FF7E1F0160BE0085A039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,10 @@
 		842D60331F054D6F007DD7F4 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		842D60371F056E65007DD7F4 /* TinToc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinToc.entitlements; sourceTree = "<group>"; };
+		8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBottomLabel.swift; sourceTree = "<group>"; };
+		8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaDonHang_ViewController.swift; sourceTree = "<group>"; };
+		8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopInfo_ViewController.swift; sourceTree = "<group>"; };
+		8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThuNhap_ViewController.swift; sourceTree = "<group>"; };
 		8BFA24BF99C8126E0EDA868D /* Pods-TinToc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc/Pods-TinToc.release.xcconfig"; sourceTree = "<group>"; };
 		AF8D567E19AC87F08E2DA392 /* Pods_TinToc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinToc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				41D412DA1F016455003E450D /* Define.swift */,
+				8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */,
 				41D412DB1F016455003E450D /* Extension+Date.swift */,
 				41D412DC1F016455003E450D /* Extension+String.swift */,
 				41D412DD1F016455003E450D /* Extensions.swift */,
@@ -232,11 +239,11 @@
 		41E9EA901F0239EE00117D9A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8490C9E31F0658D3000213C7 /* Menu */,
 				842D60301F054D2F007DD7F4 /* Login_Register */,
 				416E30551F034DAC00F6C1BA /* BaseViewController.swift */,
 				4174FF801F0160BE0085A039 /* MainViewController.swift */,
-				416E30571F034ECC00F6C1BA /* LeftMenuViewController.swift */,
-				416E30741F03990A00F6C1BA /* ShopInfo_ViewController.swift */,
+				8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */,
 				416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */,
 			);
 			name = Controllers;
@@ -257,6 +264,16 @@
 				842D60331F054D6F007DD7F4 /* RegisterVC.swift */,
 			);
 			name = Login_Register;
+			sourceTree = "<group>";
+		};
+		8490C9E31F0658D3000213C7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */,
+				8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */,
+				416E30571F034ECC00F6C1BA /* LeftMenuViewController.swift */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,7 +423,7 @@
 			files = (
 				416E30731F03932900F6C1BA /* UIButtonX.swift in Sources */,
 				4174FF811F0160BE0085A039 /* MainViewController.swift in Sources */,
-				416E30751F03990A00F6C1BA /* ShopInfo_ViewController.swift in Sources */,
+				8490C9E71F065914000213C7 /* ThuNhap_ViewController.swift in Sources */,
 				41D412ED1F016455003E450D /* Define.swift in Sources */,
 				41B768A21F025CAA00D7C566 /* UITextFieldLoginX.swift in Sources */,
 				416E30561F034DAC00F6C1BA /* BaseViewController.swift in Sources */,
@@ -416,9 +433,12 @@
 				842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */,
 				41D412F01F016455003E450D /* Extensions.swift in Sources */,
 				41D413EE1F01661A003E450D /* DataConnect.swift in Sources */,
+				8490C9E21F0658CD000213C7 /* MaDonHang_ViewController.swift in Sources */,
 				41D412EF1F016455003E450D /* Extension+String.swift in Sources */,
 				41D412F21F016455003E450D /* Function.swift in Sources */,
 				842D60321F054D64007DD7F4 /* LoginVC.swift in Sources */,
+				8490C9E01F0658A9000213C7 /* LineBottomLabel.swift in Sources */,
+				8490C9E61F065914000213C7 /* ShopInfo_ViewController.swift in Sources */,
 				416E30581F034ECC00F6C1BA /* LeftMenuViewController.swift in Sources */,
 				41D412F11F016455003E450D /* FloatRatingView.swift in Sources */,
 				41D412EE1F016455003E450D /* Extension+Date.swift in Sources */,
