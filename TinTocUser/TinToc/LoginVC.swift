@@ -81,7 +81,6 @@ class LoginVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
                                 if (error == nil){
                                     let dict = result as! [String : AnyObject]
                                     print(dict)
-                                    print(result)
                                 }
                             })
                         }

@@ -48,6 +48,7 @@
 		8490C9E21F0658CD000213C7 /* MaDonHang_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */; };
 		8490C9E61F065914000213C7 /* ShopInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */; };
 		8490C9E71F065914000213C7 /* ThuNhap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */; };
+		8490C9EF1F06696E000213C7 /* UIButtonX-nonanimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9EE1F06696E000213C7 /* UIButtonX-nonanimate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +67,7 @@
 		416E30631F038D3300F6C1BA /* seguisb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisb.ttf; sourceTree = "<group>"; };
 		416E30641F038D3300F6C1BA /* seguisbi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisbi.ttf; sourceTree = "<group>"; };
 		416E30651F038D3300F6C1BA /* seguisli.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisli.ttf; sourceTree = "<group>"; };
-		416E30721F03932900F6C1BA /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		416E30721F03932900F6C1BA /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = Common/UIButtonX.swift; sourceTree = "<group>"; };
 		416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoLoc_MainShop_ViewController.swift; sourceTree = "<group>"; };
 		4174FF7B1F0160BE0085A039 /* TinToc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinToc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4174FF7E1F0160BE0085A039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +76,7 @@
 		4174FF851F0160BE0085A039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4174FF881F0160BE0085A039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4174FF8A1F0160BE0085A039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41B768A11F025CAA00D7C566 /* UITextFieldLoginX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldLoginX.swift; sourceTree = "<group>"; };
+		41B768A11F025CAA00D7C566 /* UITextFieldLoginX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldLoginX.swift; path = Common/UITextFieldLoginX.swift; sourceTree = "<group>"; };
 		41D412DA1F016455003E450D /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		41D412DB1F016455003E450D /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		41D412DC1F016455003E450D /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
@@ -91,10 +92,11 @@
 		842D60331F054D6F007DD7F4 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		842D60371F056E65007DD7F4 /* TinToc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinToc.entitlements; sourceTree = "<group>"; };
-		8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBottomLabel.swift; sourceTree = "<group>"; };
+		8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineBottomLabel.swift; path = Common/LineBottomLabel.swift; sourceTree = "<group>"; };
 		8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaDonHang_ViewController.swift; sourceTree = "<group>"; };
 		8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopInfo_ViewController.swift; sourceTree = "<group>"; };
 		8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThuNhap_ViewController.swift; sourceTree = "<group>"; };
+		8490C9EE1F06696E000213C7 /* UIButtonX-nonanimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButtonX-nonanimate.swift"; sourceTree = "<group>"; };
 		8BFA24BF99C8126E0EDA868D /* Pods-TinToc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc/Pods-TinToc.release.xcconfig"; sourceTree = "<group>"; };
 		AF8D567E19AC87F08E2DA392 /* Pods_TinToc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinToc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,6 +162,7 @@
 		4174FF7D1F0160BE0085A039 /* TinToc */ = {
 			isa = PBXGroup;
 			children = (
+				8490C9ED1F066955000213C7 /* DesignableX */,
 				842D60371F056E65007DD7F4 /* TinToc.entitlements */,
 				41E9EA8D1F0233EB00117D9A /* Storyboard */,
 				41D412D31F016455003E450D /* Common */,
@@ -179,14 +182,11 @@
 			isa = PBXGroup;
 			children = (
 				41D412DA1F016455003E450D /* Define.swift */,
-				8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */,
 				41D412DB1F016455003E450D /* Extension+Date.swift */,
 				41D412DC1F016455003E450D /* Extension+String.swift */,
 				41D412DD1F016455003E450D /* Extensions.swift */,
 				41D412DE1F016455003E450D /* FloatRatingView.swift */,
 				41D412DF1F016455003E450D /* Function.swift */,
-				41B768A11F025CAA00D7C566 /* UITextFieldLoginX.swift */,
-				416E30721F03932900F6C1BA /* UIButtonX.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -274,6 +274,17 @@
 				416E30571F034ECC00F6C1BA /* LeftMenuViewController.swift */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		8490C9ED1F066955000213C7 /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */,
+				41B768A11F025CAA00D7C566 /* UITextFieldLoginX.swift */,
+				416E30721F03932900F6C1BA /* UIButtonX.swift */,
+				8490C9EE1F06696E000213C7 /* UIButtonX-nonanimate.swift */,
+			);
+			name = DesignableX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +441,7 @@
 				4174FF7F1F0160BE0085A039 /* AppDelegate.swift in Sources */,
 				41D413211F016589003E450D /* Config.swift in Sources */,
 				416E30771F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift in Sources */,
+				8490C9EF1F06696E000213C7 /* UIButtonX-nonanimate.swift in Sources */,
 				842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */,
 				41D412F01F016455003E450D /* Extensions.swift in Sources */,
 				41D413EE1F01661A003E450D /* DataConnect.swift in Sources */,
