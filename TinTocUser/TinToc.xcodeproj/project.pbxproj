@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41454BAA1F0650A6005D22F4 /* NewOrder_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41454BA91F0650A5005D22F4 /* NewOrder_ViewController.swift */; };
 		416E30561F034DAC00F6C1BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E30551F034DAC00F6C1BA /* BaseViewController.swift */; };
 		416E30581F034ECC00F6C1BA /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E30571F034ECC00F6C1BA /* LeftMenuViewController.swift */; };
 		416E30661F038D3300F6C1BA /* segoeui.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 416E305A1F038D3200F6C1BA /* segoeui.ttf */; };
@@ -44,7 +45,7 @@
 		842D60321F054D64007DD7F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D60311F054D64007DD7F4 /* LoginVC.swift */; };
 		842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D60331F054D6F007DD7F4 /* RegisterVC.swift */; };
 		842D60361F054F0C007DD7F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */; };
-		8490C9E01F0658A9000213C7 /* LineBottomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */; };
+		8490C9E01F0658A9000213C7 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9DF1F0658A9000213C7 /* CustomLabel.swift */; };
 		8490C9E21F0658CD000213C7 /* MaDonHang_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */; };
 		8490C9E61F065914000213C7 /* ShopInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */; };
 		8490C9E71F065914000213C7 /* ThuNhap_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		2FEDAED58F3A45D35E1CB1AA /* Pods-TinToc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc/Pods-TinToc.debug.xcconfig"; sourceTree = "<group>"; };
+		41454BA91F0650A5005D22F4 /* NewOrder_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewOrder_ViewController.swift; sourceTree = "<group>"; };
 		416E30551F034DAC00F6C1BA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		416E30571F034ECC00F6C1BA /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		416E305A1F038D3200F6C1BA /* segoeui.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeui.ttf; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		842D60331F054D6F007DD7F4 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		842D60371F056E65007DD7F4 /* TinToc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinToc.entitlements; sourceTree = "<group>"; };
-		8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBottomLabel.swift; sourceTree = "<group>"; };
+		8490C9DF1F0658A9000213C7 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaDonHang_ViewController.swift; sourceTree = "<group>"; };
 		8490C9E41F065914000213C7 /* ShopInfo_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopInfo_ViewController.swift; sourceTree = "<group>"; };
 		8490C9E51F065914000213C7 /* ThuNhap_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThuNhap_ViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				41D412DA1F016455003E450D /* Define.swift */,
-				8490C9DF1F0658A9000213C7 /* LineBottomLabel.swift */,
+				8490C9DF1F0658A9000213C7 /* CustomLabel.swift */,
 				41D412DB1F016455003E450D /* Extension+Date.swift */,
 				41D412DC1F016455003E450D /* Extension+String.swift */,
 				41D412DD1F016455003E450D /* Extensions.swift */,
@@ -245,6 +247,7 @@
 				4174FF801F0160BE0085A039 /* MainViewController.swift */,
 				8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */,
 				416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */,
+				41454BA91F0650A5005D22F4 /* NewOrder_ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41454BAA1F0650A6005D22F4 /* NewOrder_ViewController.swift in Sources */,
 				416E30731F03932900F6C1BA /* UIButtonX.swift in Sources */,
 				4174FF811F0160BE0085A039 /* MainViewController.swift in Sources */,
 				8490C9E71F065914000213C7 /* ThuNhap_ViewController.swift in Sources */,
@@ -437,7 +441,7 @@
 				41D412EF1F016455003E450D /* Extension+String.swift in Sources */,
 				41D412F21F016455003E450D /* Function.swift in Sources */,
 				842D60321F054D64007DD7F4 /* LoginVC.swift in Sources */,
-				8490C9E01F0658A9000213C7 /* LineBottomLabel.swift in Sources */,
+				8490C9E01F0658A9000213C7 /* CustomLabel.swift in Sources */,
 				8490C9E61F065914000213C7 /* ShopInfo_ViewController.swift in Sources */,
 				416E30581F034ECC00F6C1BA /* LeftMenuViewController.swift in Sources */,
 				41D412F11F016455003E450D /* FloatRatingView.swift in Sources */,

@@ -24,22 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         applicationDidFinishLaunching(application)
         
         FBSDKApplicationDelegate .sharedInstance() .application(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//        instantiateInitialViewController(withIdentifier: "MainViewController") as! MainViewController
-        
-        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftMenuViewController") as! LeftMenuViewController
-        
+     
+    
         let loginVC = loginStoryboard.instantiateViewController(withIdentifier: "LoginRegisterVC") as! LoginVC
-        
-        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
-        
-        leftViewController.mainVC = nvc
-        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
-        
-        SlideMenuOptions.contentViewScale = 1
-        SlideMenuOptions.hideStatusBar = false;
-        
         self.window?.rootViewController = loginVC
         self.window?.makeKeyAndVisible()
         return true

@@ -11,6 +11,7 @@ import GoogleAPIClientForREST
 import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SlideMenuControllerSwift
 
 class LoginVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
 
@@ -60,14 +61,27 @@ class LoginVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
         present(alert, animated: true, completion: nil)
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func presentToMainViewController (){
+        
+        let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftMenuViewController") as! LeftMenuViewController
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
+        
+        leftViewController.mainVC = nvc
+        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
+        
+        SlideMenuOptions.contentViewScale = 1
+        SlideMenuOptions.hideStatusBar = false;
+        UIApplication.shared.keyWindow?.rootViewController = slideMenuController
+        self.present(slideMenuController, animated: true, completion: nil)
     }
     
+   
+    
     @IBAction func signInBtnPressed(_ sender: UIButtonX) {
-        GIDSignIn.sharedInstance().signOut()
-        print("logouted")
+        presentToMainViewController()
+
     }
     
     @IBAction func fbBtnPressed(_ sender: UIButton) {

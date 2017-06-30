@@ -22,7 +22,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var capchaLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
 
@@ -40,6 +40,7 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

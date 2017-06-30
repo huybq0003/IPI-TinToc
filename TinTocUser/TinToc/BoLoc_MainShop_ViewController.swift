@@ -18,7 +18,10 @@ class BoLoc_MainShop_ViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+    }
     
     @IBAction func abtnCancel(_ sender: Any) {
         dismiss()
@@ -30,6 +33,7 @@ class BoLoc_MainShop_ViewController: BaseViewController {
         isPresented = false // Set this flag to NO before dismissing controller, so that correct orientation will be chosen for the bottom controller
         self.presentingViewController!.dismiss(animated: true, completion: nil);
     }
+    
     
 }
 

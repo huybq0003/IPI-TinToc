@@ -12,16 +12,9 @@ target 'TinToc' do
   pod 'SDWebImage'
   pod 'ReachabilitySwift', '~> 3'
   pod 'GoogleAPIClientForREST/Gmail', '~> 1.2.1'
-<<<<<<< HEAD
   pod 'Google/SignIn', '~> 3.0.3'
   pod 'FacebookCore'
   pod 'FacebookLogin'
-=======
-    pod 'Google/SignIn', '~> 3.0.3'
-    pod 'FacebookCore'
-    pod 'FacebookLogin'
-    pod 'ARSLineProgress', '~> 2.0'
-
->>>>>>> origin/master
+  pod 'ARSLineProgress', '~> 2.0'
 
 end

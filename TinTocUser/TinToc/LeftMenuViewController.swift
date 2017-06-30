@@ -22,6 +22,7 @@ class LeftMenuViewController: BaseViewController {
         
         listItem = [["name":"Thông tin Shop","image":"ic_shopinfo"],["name":"Thu nhập","image":"ic_thunhap"],["name":"Ưu đãi","image":"ic_uudai"],["name":"Đánh giá","image":"ic_danhgia"],["name":"Hỗ Trợ","image":"ic_help"]]
         self.tbvMenu.isScrollEnabled = false
+        self.tbvMenu.separatorStyle = .none
        
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -34,8 +35,6 @@ class LeftMenuViewController: BaseViewController {
         
         
     }
-    
-    
     
     
 }
@@ -53,11 +52,18 @@ extension LeftMenuViewController : UITableViewDelegate {
             let vc = mainStoryboard.instantiateViewController(withIdentifier: "ShopInfo_ViewController") as! ShopInfo_ViewController
             self.present(vc, animated: true, completion: nil)
         case 1:
-            let vc = mainStoryboard.instantiateViewController(withIdentifier: "BoLoc_MainShop_ViewController") as! BoLoc_MainShop_ViewController
+            let vc = mainStoryboard.instantiateViewController(withIdentifier: "ThuNhap_ViewController") as! ThuNhap_ViewController
+            self.present(vc, animated: true, completion: nil)
+        
+        case 2:
+            let vc = mainStoryboard.instantiateViewController(withIdentifier: "NewOrder_ViewController") as! NewOrder_ViewController
             self.present(vc, animated: true, completion: nil)
         default:
             print("select cell")
         }
+        
+        
+        tbvMenu.deselectRow(at: indexPath, animated: true)
         
         
     }

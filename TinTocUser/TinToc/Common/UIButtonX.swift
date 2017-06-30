@@ -15,6 +15,7 @@ import UIKit
 @IBDesignable
 
 class UIButtonX: UIButton {
+    
     @IBInspectable var xCornerRadius : CGFloat = 0 {
         didSet {
             layer.cornerRadius = xCornerRadius
@@ -41,7 +42,16 @@ class UIButtonX: UIButton {
         }
     }
     
+    
+    
     // Image Inspectors
+    
+    @IBInspectable var animationX: Bool = false {
+        didSet {
+            
+        }
+    }
+    
     
     @IBInspectable var enableImageRightAligned: Bool = false
     
@@ -75,12 +85,19 @@ class UIButtonX: UIButton {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        if animationX == true {
+            self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 6, options: .curveEaseInOut, animations: {
+                self.transform = .identity
+            }, completion: nil)
+            
+            super.touchesBegan(touches, with: event)
+            
+        }else{
+            
+            super.touchesBegan(touches, with: event)
+        }
         
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 6, options: .curveEaseInOut, animations: {
-            self.transform = .identity
-        }, completion: nil)
-        
-        super.touchesBegan(touches, with: event)
     }
 }

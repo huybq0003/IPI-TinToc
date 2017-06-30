@@ -19,11 +19,6 @@ class UITextFieldLoginX: UITextField {
         }
     }
     
-    @IBInspectable var imageWidth: CGFloat = 0 {
-        didSet {
-            updateUI()
-        }
-    }
     
     @IBInspectable var xLeftImage: CGFloat = 0 {
         didSet {
