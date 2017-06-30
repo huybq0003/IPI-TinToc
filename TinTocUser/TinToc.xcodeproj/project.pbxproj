@@ -41,8 +41,10 @@
 		41D413211F016589003E450D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D413171F016589003E450D /* Config.swift */; };
 		41D413EE1F01661A003E450D /* DataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D413311F01661A003E450D /* DataConnect.swift */; };
 		41E9EA8F1F02342000117D9A /* Login+Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E9EA8E1F02342000117D9A /* Login+Register.storyboard */; };
-		41E9EA921F023A1600117D9A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9EA911F023A1600117D9A /* RegisterViewController.swift */; };
 		82CC214F9EE090C495E1F071 /* Pods_TinToc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8D567E19AC87F08E2DA392 /* Pods_TinToc.framework */; };
+		842D60321F054D64007DD7F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D60311F054D64007DD7F4 /* LoginVC.swift */; };
+		842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D60331F054D6F007DD7F4 /* RegisterVC.swift */; };
+		842D60361F054F0C007DD7F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +85,10 @@
 		41D413171F016589003E450D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		41D413311F01661A003E450D /* DataConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnect.swift; sourceTree = "<group>"; };
 		41E9EA8E1F02342000117D9A /* Login+Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login+Register.storyboard"; sourceTree = "<group>"; };
-		41E9EA911F023A1600117D9A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		842D60311F054D64007DD7F4 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		842D60331F054D6F007DD7F4 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		842D60371F056E65007DD7F4 /* TinToc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinToc.entitlements; sourceTree = "<group>"; };
 		8BFA24BF99C8126E0EDA868D /* Pods-TinToc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc/Pods-TinToc.release.xcconfig"; sourceTree = "<group>"; };
 		AF8D567E19AC87F08E2DA392 /* Pods_TinToc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinToc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +154,7 @@
 		4174FF7D1F0160BE0085A039 /* TinToc */ = {
 			isa = PBXGroup;
 			children = (
+				842D60371F056E65007DD7F4 /* TinToc.entitlements */,
 				41E9EA8D1F0233EB00117D9A /* Storyboard */,
 				41D412D31F016455003E450D /* Common */,
 				41D412F91F016576003E450D /* Localization String */,
@@ -157,6 +163,7 @@
 				41E9EA901F0239EE00117D9A /* Controllers */,
 				4174FF7E1F0160BE0085A039 /* AppDelegate.swift */,
 				4174FF851F0160BE0085A039 /* Assets.xcassets */,
+				842D60351F054F0C007DD7F4 /* GoogleService-Info.plist */,
 				4174FF8A1F0160BE0085A039 /* Info.plist */,
 			);
 			path = TinToc;
@@ -225,10 +232,10 @@
 		41E9EA901F0239EE00117D9A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				842D60301F054D2F007DD7F4 /* Login_Register */,
 				416E30551F034DAC00F6C1BA /* BaseViewController.swift */,
 				4174FF801F0160BE0085A039 /* MainViewController.swift */,
 				416E30571F034ECC00F6C1BA /* LeftMenuViewController.swift */,
-				41E9EA911F023A1600117D9A /* RegisterViewController.swift */,
 				416E30741F03990A00F6C1BA /* ShopInfo_ViewController.swift */,
 				416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */,
 			);
@@ -241,6 +248,15 @@
 				AF8D567E19AC87F08E2DA392 /* Pods_TinToc.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		842D60301F054D2F007DD7F4 /* Login_Register */ = {
+			isa = PBXGroup;
+			children = (
+				842D60311F054D64007DD7F4 /* LoginVC.swift */,
+				842D60331F054D6F007DD7F4 /* RegisterVC.swift */,
+			);
+			name = Login_Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +294,13 @@
 				TargetAttributes = {
 					4174FF7A1F0160BE0085A039 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = TDCT37QT5P;
+						DevelopmentTeam = MP4JHA4J7N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -317,6 +338,7 @@
 				41E9EA8F1F02342000117D9A /* Login+Register.storyboard in Resources */,
 				416E30681F038D3300F6C1BA /* segoeuii.ttf in Resources */,
 				416E306F1F038D3300F6C1BA /* seguisb.ttf in Resources */,
+				842D60361F054F0C007DD7F4 /* GoogleService-Info.plist in Resources */,
 				416E30711F038D3300F6C1BA /* seguisli.ttf in Resources */,
 				416E30691F038D3300F6C1BA /* segoeuil.ttf in Resources */,
 				416E306D1F038D3300F6C1BA /* seguibli.ttf in Resources */,
@@ -383,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				416E30731F03932900F6C1BA /* UIButtonX.swift in Sources */,
-				41E9EA921F023A1600117D9A /* RegisterViewController.swift in Sources */,
 				4174FF811F0160BE0085A039 /* MainViewController.swift in Sources */,
 				416E30751F03990A00F6C1BA /* ShopInfo_ViewController.swift in Sources */,
 				41D412ED1F016455003E450D /* Define.swift in Sources */,
@@ -392,10 +413,12 @@
 				4174FF7F1F0160BE0085A039 /* AppDelegate.swift in Sources */,
 				41D413211F016589003E450D /* Config.swift in Sources */,
 				416E30771F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift in Sources */,
+				842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */,
 				41D412F01F016455003E450D /* Extensions.swift in Sources */,
 				41D413EE1F01661A003E450D /* DataConnect.swift in Sources */,
 				41D412EF1F016455003E450D /* Extension+String.swift in Sources */,
 				41D412F21F016455003E450D /* Function.swift in Sources */,
+				842D60321F054D64007DD7F4 /* LoginVC.swift in Sources */,
 				416E30581F034ECC00F6C1BA /* LeftMenuViewController.swift in Sources */,
 				41D412F11F016455003E450D /* FloatRatingView.swift in Sources */,
 				41D412EE1F016455003E450D /* Extension+Date.swift in Sources */,
@@ -520,7 +543,8 @@
 			baseConfigurationReference = 2FEDAED58F3A45D35E1CB1AA /* Pods-TinToc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TDCT37QT5P;
+				CODE_SIGN_ENTITLEMENTS = TinToc/TinToc.entitlements;
+				DEVELOPMENT_TEAM = MP4JHA4J7N;
 				INFOPLIST_FILE = TinToc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huybui.TinToc;
@@ -534,7 +558,8 @@
 			baseConfigurationReference = 8BFA24BF99C8126E0EDA868D /* Pods-TinToc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TDCT37QT5P;
+				CODE_SIGN_ENTITLEMENTS = TinToc/TinToc.entitlements;
+				DEVELOPMENT_TEAM = MP4JHA4J7N;
 				INFOPLIST_FILE = TinToc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huybui.TinToc;

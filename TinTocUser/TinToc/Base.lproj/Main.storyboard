@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -282,7 +282,7 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO_TINTOC2" translatesAutoresizingMaskIntoConstraints="NO" id="dN2-Yd-gcH">
-                                <rect key="frame" x="127.5" y="40" width="120" height="120"/>
+                                <rect key="frame" x="128" y="40" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dN2-Yd-gcH" secondAttribute="height" id="yAG-Bt-AAw"/>
                                 </constraints>
@@ -333,7 +333,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYj-Fb-Fcg">
-                                        <rect key="frame" x="633" y="28.5" width="19" height="19"/>
+                                        <rect key="frame" x="633" y="28" width="19" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oYj-Fb-Fcg" secondAttribute="height" id="GrZ-Y9-q3I"/>
                                         </constraints>
@@ -378,10 +378,10 @@
                                                             <rect key="frame" x="-0.5" y="0.0" width="645" height="50"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-ar-AJP" userLabel="STT">
-                                                                    <rect key="frame" x="-0.5" y="0.0" width="51.5" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RS-Kr-U1b">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="51.5" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="52" height="50"/>
                                                                             <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
                                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -396,7 +396,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-By-OfF" userLabel="Code">
-                                                                    <rect key="frame" x="52.5" y="0.0" width="67" height="50"/>
+                                                                    <rect key="frame" x="53" y="0.0" width="67" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã số" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rra-S4-M3q">
                                                                             <rect key="frame" x="0.0" y="0.0" width="67" height="50"/>
@@ -414,7 +414,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pv0-37-rM5" userLabel="Date">
-                                                                    <rect key="frame" x="120.5" y="0.0" width="87.5" height="50"/>
+                                                                    <rect key="frame" x="121" y="0.0" width="87.5" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4t-MP-cdB">
                                                                             <rect key="frame" x="0.0" y="0.0" width="87.5" height="50"/>
@@ -432,13 +432,13 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6i-sg-paI" userLabel="Time">
-                                                                    <rect key="frame" x="209" y="0.0" width="175" height="50"/>
+                                                                    <rect key="frame" x="209.5" y="0.0" width="176" height="50"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nf-g9-iHE" userLabel="Time">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="175" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="176" height="24"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8II-hh-Kn7">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="19"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="19"/>
                                                                                     <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
                                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -452,10 +452,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qa-BV-rTB" userLabel="Tu">
-                                                                            <rect key="frame" x="0.0" y="25" width="88" height="25"/>
+                                                                            <rect key="frame" x="0.0" y="25" width="88.5" height="25"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Từ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVA-EY-IwV">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="25"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="88.5" height="25"/>
                                                                                     <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
                                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -470,10 +470,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjI-sZ-eFV" userLabel="Den">
-                                                                            <rect key="frame" x="89" y="25" width="86" height="25"/>
+                                                                            <rect key="frame" x="89.5" y="25" width="86.5" height="25"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đến" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re0-lu-fYI">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="25"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="25"/>
                                                                                     <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
                                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -521,10 +521,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iou-IT-mzf" userLabel="Status">
-                                                                    <rect key="frame" x="385" y="0.0" width="192" height="50"/>
+                                                                    <rect key="frame" x="386.5" y="0.0" width="190.5" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trạng thái" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKO-5r-NkU">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="190.5" height="50"/>
                                                                             <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="14"/>
                                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -590,42 +590,42 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="645" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-8b-s9k">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="51.5" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="50"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29V-2O-Spl">
-                                                                    <rect key="frame" x="52.5" y="0.0" width="67" height="50"/>
+                                                                    <rect key="frame" x="53" y="0.0" width="67" height="50"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22-06-2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBl-cX-BgB">
-                                                                    <rect key="frame" x="120.5" y="0.0" width="87.5" height="50"/>
+                                                                    <rect key="frame" x="121" y="0.0" width="88.5" height="50"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22-06-2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8H-aw-co2">
-                                                                    <rect key="frame" x="209" y="0.0" width="87.5" height="50"/>
+                                                                    <rect key="frame" x="210.5" y="0.0" width="88.5" height="50"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25-06-2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArO-aS-Mr2">
-                                                                    <rect key="frame" x="297.5" y="0.0" width="87.5" height="50"/>
+                                                                    <rect key="frame" x="300" y="0.0" width="88" height="50"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang chuyển" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-EB-Xdo">
-                                                                    <rect key="frame" x="386" y="0.0" width="191" height="50"/>
+                                                                    <rect key="frame" x="389" y="0.0" width="188" height="50"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
                                                                     <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -773,7 +773,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ez1-ZT-B8x" userLabel="BodyView">
-                                <rect key="frame" x="28" y="162.5" width="318" height="222"/>
+                                <rect key="frame" x="28" y="163" width="318" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOÁ ĐƠN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRA-4q-jNv">
                                         <rect key="frame" x="109" y="10" width="100" height="21"/>
@@ -870,7 +870,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twf-tQ-AEz">
-                                <rect key="frame" x="187.5" y="622" width="187.5" height="45"/>
+                                <rect key="frame" x="188" y="622" width="187" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="IJI-T3-Td2"/>
                                 </constraints>
@@ -880,7 +880,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axg-eN-H9E">
-                                <rect key="frame" x="0.0" y="622" width="187.5" height="45"/>
+                                <rect key="frame" x="0.0" y="622" width="188" height="45"/>
                                 <color key="backgroundColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="DED-s9-dXA"/>
@@ -969,7 +969,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLu-nd-oGA">
-                                        <rect key="frame" x="77.5" y="121" width="163" height="30"/>
+                                        <rect key="frame" x="78" y="121" width="163" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="0in-5y-E2F"/>
                                         </constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,10 +20,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Register View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="U6v-xa-2bY">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ctq-qD-Uyb" customClass="RegisterViewController" customModule="TinToc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ctq-qD-Uyb" customClass="RegisterVC" customModule="TinToc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fRm-Zw-6Qp"/>
                         <viewControllerLayoutGuide type="bottom" id="niO-9a-Q0M"/>
@@ -59,6 +59,9 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerBtnPressed:" destination="ctq-qD-Uyb" eventType="touchUpInside" id="3Av-VU-Pcu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-3G-bkk">
                                         <rect key="frame" x="159.5" y="71" width="140" height="34"/>
@@ -66,6 +69,9 @@
                                         <state key="normal" title="ĐĂNG NHẬP NGAY">
                                             <color key="titleColor" red="0.0" green="0.71046072244644165" blue="0.94686084985733032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginBtnPressed:" destination="ctq-qD-Uyb" eventType="touchUpInside" id="DCL-AA-5nf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -165,9 +171,6 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_phone"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
@@ -217,9 +220,6 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_mail"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
-                                                        <real key="value" value="18"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
@@ -525,6 +525,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" image="ic_replay"/>
+                                                <connections>
+                                                    <action selector="changeCapchaBtnPressed:" destination="ctq-qD-Uyb" eventType="touchUpInside" id="k8J-me-SAl"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box_capcha" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-Qg-aWK">
                                                 <rect key="frame" x="140" y="3" width="110" height="30"/>
@@ -589,6 +592,9 @@
                                                     <constraint firstAttribute="width" secondItem="agC-GZ-PyT" secondAttribute="height" id="wfz-tS-6xx"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="tick"/>
+                                                <connections>
+                                                    <action selector="agreeBtnPressed:" destination="ctq-qD-Uyb" eventType="touchUpInside" id="bby-jg-Gzh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -671,17 +677,24 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="txtName" destination="ZjT-d0-KQw" id="iK0-dv-q5W"/>
+                        <outlet property="address" destination="L86-dS-CaF" id="XZr-dh-ig6"/>
+                        <outlet property="capcha" destination="0kZ-xL-PSp" id="9TD-TD-KcP"/>
+                        <outlet property="capchaLbl" destination="UdG-F1-vjT" id="XGy-gS-WC0"/>
+                        <outlet property="confirmPwd" destination="Jtk-bv-sm3" id="uhd-rd-Ewl"/>
+                        <outlet property="email" destination="YzH-vT-RKk" id="7dh-0o-q2n"/>
+                        <outlet property="nameLbl" destination="ZjT-d0-KQw" id="fh0-sf-3a6"/>
+                        <outlet property="password" destination="hzu-DH-FqN" id="rZZ-o7-Lnd"/>
+                        <outlet property="phoneLbl" destination="Sws-qw-jpo" id="RFS-qx-APK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgb-U4-cw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37.5" y="145.77464788732394"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="Ps1-gE-BMH">
             <objects>
-                <viewController id="9Xv-Wf-K47" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRegisterVC" id="9Xv-Wf-K47" customClass="LoginVC" customModule="TinToc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zd1-F0-DhZ"/>
                         <viewControllerLayoutGuide type="bottom" id="SJa-Oi-rji"/>
@@ -705,30 +718,15 @@
                                     <constraint firstAttribute="width" secondItem="GQN-ES-q13" secondAttribute="height" multiplier="4.5" id="9MM-PM-P3R"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn chưa có tài khoản?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="N77-eb-frj">
-                                <rect key="frame" x="40" y="502" width="144" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="N77-eb-frj" secondAttribute="height" multiplier="2:1" id="Vgd-gB-deB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐĂNG KÝ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-ie-sb0">
-                                <rect key="frame" x="194" y="532" width="80" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="AcM-ie-sb0" secondAttribute="height" multiplier="5" id="yy6-8c-yrl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIE-Le-uLb" userLabel="BTFB">
                                 <rect key="frame" x="26" y="452" width="112" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DIE-Le-uLb" secondAttribute="height" multiplier="2.8" id="ka5-X0-V7L"/>
                                 </constraints>
                                 <state key="normal" image="ic_facebook"/>
+                                <connections>
+                                    <action selector="fbBtnPressed:" destination="9Xv-Wf-K47" eventType="touchUpInside" id="B2H-iv-XUa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNA-KP-XEQ" userLabel="BTGG">
                                 <rect key="frame" x="177" y="450" width="112" height="45"/>
@@ -736,16 +734,10 @@
                                     <constraint firstAttribute="width" secondItem="lNA-KP-XEQ" secondAttribute="height" multiplier="2.5" id="0zI-hz-7FO"/>
                                 </constraints>
                                 <state key="normal" image="ic_google"/>
+                                <connections>
+                                    <action selector="ggBtnPressed:" destination="9Xv-Wf-K47" eventType="touchUpInside" id="lNb-zG-TQE"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập bằng tài khoản khác" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="pZq-T8-fIM">
-                                <rect key="frame" x="64" y="424.5" width="192" height="27.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="pZq-T8-fIM" secondAttribute="height" multiplier="7" id="38y-Ql-Q0e"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.23137254900000001" green="0.53333333329999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX9-ck-tkG" customClass="UIButtonX" customModule="TinToc" customModuleProvider="target">
                                 <rect key="frame" x="40" y="366" width="240" height="43.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -761,6 +753,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInBtnPressed:" destination="9Xv-Wf-K47" eventType="touchUpInside" id="mme-V2-j7K"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q69-Fo-TuV" customClass="UITextFieldLoginX" customModule="TinToc" customModuleProvider="target">
                                 <rect key="frame" x="40.5" y="245" width="240" height="34.5"/>
@@ -785,6 +780,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="leftImageHeight">
                                         <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xLeftImage">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -814,14 +812,53 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quên mật khẩu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5NF-GY-rZX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn chưa có tài khoản?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="N77-eb-frj">
+                                <rect key="frame" x="40" y="502" width="144" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N77-eb-frj" secondAttribute="height" multiplier="2:1" id="Vgd-gB-deB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐĂNG KÝ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-ie-sb0">
+                                <rect key="frame" x="194" y="532" width="80" height="16"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AcM-ie-sb0" secondAttribute="height" multiplier="5" id="yy6-8c-yrl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.32156862749999998" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dzz-iC-xUt" appends="YES" id="Zey-o8-ny5"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập bằng tài khoản khác" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="pZq-T8-fIM">
+                                <rect key="frame" x="64" y="424" width="192" height="27.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pZq-T8-fIM" secondAttribute="height" multiplier="7" id="38y-Ql-Q0e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.53333333329999999" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="M9U-hD-0I5" appends="YES" id="iBo-JQ-Y1D"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quên mật khẩu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="5NF-GY-rZX">
                                 <rect key="frame" x="191.5" y="335.5" width="89" height="11"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5NF-GY-rZX" secondAttribute="height" multiplier="8" id="5LX-o1-K9j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.32156862749999998" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="D1T-HP-MNT" appends="YES" id="hnA-vJ-sRg"/>
+                                </connections>
                             </label>
                         </subviews>
                         <constraints>
@@ -866,10 +903,35 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uMo-fN-67t"/>
+                    <connections>
+                        <outlet property="forgotPwdLbl" destination="5NF-GY-rZX" id="w3L-iV-dTu"/>
+                        <outlet property="passwordTxt" destination="veM-O3-rqF" id="otF-Gz-jXc"/>
+                        <outlet property="registerLbl" destination="AcM-ie-sb0" id="lyz-CR-Uyo"/>
+                        <outlet property="userTxt" destination="q69-Fo-TuV" id="hpX-eE-omb"/>
+                        <outlet property="withOtherAccLbl" destination="pZq-T8-fIM" id="R2s-AI-HNr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngD-ki-5cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="D1T-HP-MNT" userLabel="Tap FotgotPwd">
+                    <connections>
+                        <action selector="tapForgotPwdBtnPressed:" destination="9Xv-Wf-K47" id="JfY-km-eqa"/>
+                        <outlet property="delegate" destination="9Xv-Wf-K47" id="xco-zK-8nf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="M9U-hD-0I5" userLabel="Tap WithOtherAccount">
+                    <connections>
+                        <action selector="withOtherAccount:" destination="9Xv-Wf-K47" id="Amo-SU-UZD"/>
+                        <outlet property="delegate" destination="9Xv-Wf-K47" id="n1s-uk-kgM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dzz-iC-xUt" userLabel="Tap Register">
+                    <connections>
+                        <action selector="registerBtnPressed:" destination="9Xv-Wf-K47" id="LDv-GX-dGI"/>
+                        <outlet property="delegate" destination="9Xv-Wf-K47" id="rol-Ae-frq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1704.375" y="122.53521126760563"/>
+            <point key="canvasLocation" x="1817" y="109"/>
         </scene>
     </scenes>
     <resources>

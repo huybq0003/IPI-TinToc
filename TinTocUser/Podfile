@@ -20,6 +20,7 @@ target 'TinToc' do
     pod 'Google/SignIn', '~> 3.0.3'
     pod 'FacebookCore'
     pod 'FacebookLogin'
+    pod 'ARSLineProgress', '~> 2.0'
 
 >>>>>>> origin/master
 
