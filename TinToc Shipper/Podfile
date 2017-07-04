@@ -7,4 +7,15 @@ target 'TinToc Shipper' do
 
   # Pods for TinToc Shipper
     pod 'ARSLineProgress', '~> 2.0'
+    pod 'SideMenuController'
+    pod 'ObjectMapper', '~> 2.2'
+    pod 'Alamofire', '~> 4.0'
+    pod 'SDWebImage'
+    pod 'Google/SignIn', '~> 3.0.3'
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+    pod 'ReachabilitySwift', '~> 3'
+    pod 'GoogleAPIClientForREST/Gmail', '~> 1.2.1'
+    pod 'SidePanel'
+    pod 'MMDrawController'
 end

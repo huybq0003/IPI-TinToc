@@ -9,10 +9,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MenuVC-->
+        <scene sceneID="MDU-se-FhZ">
+            <objects>
+                <viewController storyboardIdentifier="SideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bVf-ws-OoZ" customClass="MenuVC" customModule="TinToc_Shipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xWB-bu-Jv2"/>
+                        <viewControllerLayoutGuide type="bottom" id="DIE-z5-vFN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pvb-Uz-04B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AWA-rZ-sTa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="IEa-W4-rZw">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IEa-W4-rZw" id="zmi-qh-lJh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bVf-ws-OoZ" id="smZ-gJ-3XN"/>
+                                    <outlet property="delegate" destination="bVf-ws-OoZ" id="CH4-Bs-tUC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AWA-rZ-sTa" firstAttribute="centerY" secondItem="Pvb-Uz-04B" secondAttribute="centerY" id="226-8L-bxx"/>
+                            <constraint firstItem="AWA-rZ-sTa" firstAttribute="height" secondItem="Pvb-Uz-04B" secondAttribute="height" id="NNF-Dq-iq0"/>
+                            <constraint firstItem="AWA-rZ-sTa" firstAttribute="centerX" secondItem="Pvb-Uz-04B" secondAttribute="centerX" id="hVl-W1-x91"/>
+                            <constraint firstItem="AWA-rZ-sTa" firstAttribute="width" secondItem="Pvb-Uz-04B" secondAttribute="width" id="vCD-5l-RT2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tbvMenu" destination="AWA-rZ-sTa" id="gOr-fn-vFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVD-wf-M0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881.25" y="35.91549295774648"/>
+        </scene>
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TinToc_Shipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,33 +68,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nexus_material_wallpapers_by_ashgrig-d8efzad" translatesAutoresizingMaskIntoConstraints="NO" id="ryY-81-U8r">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5j-FO-brb">
-                                <rect key="frame" x="129" y="403" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Activate"/>
-                                <connections>
-                                    <action selector="activate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xIv-gL-bBm"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C86-bs-tLu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Main VC" id="nau-g9-pMT"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ryY-81-U8r" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="1Gx-Nk-2lD"/>
-                            <constraint firstItem="ryY-81-U8r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1fS-B1-vgo"/>
-                            <constraint firstItem="ryY-81-U8r" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Akl-rS-EiO"/>
-                            <constraint firstItem="ryY-81-U8r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MJF-kM-uUS"/>
-                        </constraints>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="ss4-vq-rSi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.375" y="35.91549295774648"/>
+            <point key="canvasLocation" x="-81" y="36"/>
+        </scene>
+        <!--VC1-->
+        <scene sceneID="gdG-ll-oTG">
+            <objects>
+                <viewController storyboardIdentifier="VC1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pcj-GP-hgA" customClass="VC1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fH7-JM-1mk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jgg-ik-kmB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ywA-Uu-HPC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.32156862749999998" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Od3-eS-Ios" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="36"/>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="Cah-j1-9GU">
+            <objects>
+                <viewController storyboardIdentifier="VC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g5g-9Q-Y2x" customClass="VC2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sFz-k2-mky"/>
+                        <viewControllerLayoutGuide type="bottom" id="2FY-cp-Jqu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P10-56-j7F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJL-wS-5uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="705"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="nexus_material_wallpapers_by_ashgrig-d8efzad" width="1191" height="670"/>
-    </resources>
 </document>

@@ -8,26 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		41B768901F02406100D7C566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7688F1F02406100D7C566 /* AppDelegate.swift */; };
-		41B768921F02406100D7C566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B768911F02406100D7C566 /* ViewController.swift */; };
 		41B768951F02406100D7C566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B768931F02406100D7C566 /* Main.storyboard */; };
 		41B768971F02406100D7C566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B768961F02406100D7C566 /* Assets.xcassets */; };
 		41B7689A1F02406100D7C566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B768981F02406100D7C566 /* LaunchScreen.storyboard */; };
+		6E9CAF4C5870F8910742BD18 /* Pods_TinToc_Shipper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EFEE93013626745A8B57DC /* Pods_TinToc_Shipper.framework */; };
+		841195F51F0B9477005BCBEA /* UIButtonX-nonanimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195F41F0B9477005BCBEA /* UIButtonX-nonanimate.swift */; };
+		841195F81F0B94AD005BCBEA /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195F61F0B94AD005BCBEA /* UIButtonX.swift */; };
+		841195F91F0B94AD005BCBEA /* UITextFieldLoginX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195F71F0B94AD005BCBEA /* UITextFieldLoginX.swift */; };
+		841195FB1F0B94C3005BCBEA /* LineBottomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195FA1F0B94C3005BCBEA /* LineBottomLabel.swift */; };
+		841196001F0B94E4005BCBEA /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195FD1F0B94E4005BCBEA /* Define.swift */; };
+		841196011F0B94E4005BCBEA /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195FE1F0B94E4005BCBEA /* Extension+Date.swift */; };
+		841196021F0B94E4005BCBEA /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841195FF1F0B94E4005BCBEA /* Extension+String.swift */; };
+		841196051F0B9529005BCBEA /* DataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841196041F0B9529005BCBEA /* DataConnect.swift */; };
+		841196071F0B9538005BCBEA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841196061F0B9538005BCBEA /* BaseViewController.swift */; };
+		841196091F0B9627005BCBEA /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841196081F0B9627005BCBEA /* FloatRatingView.swift */; };
+		84137EDF1F0A572600542269 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84137EDE1F0A572600542269 /* MainScreenVC.swift */; };
+		84137EE11F0A5B8C00542269 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84137EE01F0A5B8C00542269 /* MenuVC.swift */; };
 		8490C9F11F06B24E000213C7 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490C9F01F06B24E000213C7 /* Function.swift */; };
-		E2F1132A668BB33B6847ABB9 /* Pods_TinToc_Shipper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5D563A24478CE2DCFDE498 /* Pods_TinToc_Shipper.framework */; };
+		84B10CF01F0A764900024840 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B10CEF1F0A764900024840 /* VC1.swift */; };
+		84B10CF21F0A765900024840 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B10CF11F0A765900024840 /* VC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41B7688C1F02406100D7C566 /* TinToc Shipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinToc Shipper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B7688F1F02406100D7C566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41B768911F02406100D7C566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41B768941F02406100D7C566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41B768961F02406100D7C566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41B768991F02406100D7C566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41B7689B1F02406100D7C566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54781BAD9689060DDF8C7E76 /* Pods-TinToc Shipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc Shipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper.release.xcconfig"; sourceTree = "<group>"; };
+		841195F41F0B9477005BCBEA /* UIButtonX-nonanimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButtonX-nonanimate.swift"; sourceTree = "<group>"; };
+		841195F61F0B94AD005BCBEA /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		841195F71F0B94AD005BCBEA /* UITextFieldLoginX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldLoginX.swift; sourceTree = "<group>"; };
+		841195FA1F0B94C3005BCBEA /* LineBottomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBottomLabel.swift; sourceTree = "<group>"; };
+		841195FD1F0B94E4005BCBEA /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		841195FE1F0B94E4005BCBEA /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		841195FF1F0B94E4005BCBEA /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		841196041F0B9529005BCBEA /* DataConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnect.swift; sourceTree = "<group>"; };
+		841196061F0B9538005BCBEA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		841196081F0B9627005BCBEA /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		84137EDE1F0A572600542269 /* MainScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		84137EE01F0A5B8C00542269 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		8490C9F01F06B24E000213C7 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
-		9B354F7A16BBD292D47801B4 /* Pods-TinToc Shipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc Shipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper.debug.xcconfig"; sourceTree = "<group>"; };
-		9E5D563A24478CE2DCFDE498 /* Pods_TinToc_Shipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinToc_Shipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B10CEF1F0A764900024840 /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		84B10CF11F0A765900024840 /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		E21E5AF40B92D499B577A753 /* Pods-TinToc Shipper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc Shipper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper.debug.xcconfig"; sourceTree = "<group>"; };
+		E5231F441DF5B917ED2DE7C8 /* Pods-TinToc Shipper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinToc Shipper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper.release.xcconfig"; sourceTree = "<group>"; };
+		E5EFEE93013626745A8B57DC /* Pods_TinToc_Shipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinToc_Shipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +61,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F1132A668BB33B6847ABB9 /* Pods_TinToc_Shipper.framework in Frameworks */,
+				6E9CAF4C5870F8910742BD18 /* Pods_TinToc_Shipper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1169460B38548F419E49CA7F /* Pods */ = {
+		206FD47C5FBFAA05AC7D59EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B354F7A16BBD292D47801B4 /* Pods-TinToc Shipper.debug.xcconfig */,
-				54781BAD9689060DDF8C7E76 /* Pods-TinToc Shipper.release.xcconfig */,
+				E21E5AF40B92D499B577A753 /* Pods-TinToc Shipper.debug.xcconfig */,
+				E5231F441DF5B917ED2DE7C8 /* Pods-TinToc Shipper.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -56,8 +82,8 @@
 			children = (
 				41B7688E1F02406100D7C566 /* TinToc Shipper */,
 				41B7688D1F02406100D7C566 /* Products */,
-				1169460B38548F419E49CA7F /* Pods */,
-				C267F38EDC33819E807C5C15 /* Frameworks */,
+				206FD47C5FBFAA05AC7D59EC /* Pods */,
+				A11E2EF5BB40C6DA61B631FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,21 +98,82 @@
 		41B7688E1F02406100D7C566 /* TinToc Shipper */ = {
 			isa = PBXGroup;
 			children = (
+				841196031F0B9514005BCBEA /* DataService */,
+				841195FC1F0B94CE005BCBEA /* Common */,
+				84137EDD1F0A56FF00542269 /* Model */,
+				84137EDC1F0A56F900542269 /* View */,
+				84137EDB1F0A56F300542269 /* Controller */,
+				84137EDA1F0A56E700542269 /* DesignableX */,
 				41B7688F1F02406100D7C566 /* AppDelegate.swift */,
-				41B768911F02406100D7C566 /* ViewController.swift */,
 				41B768961F02406100D7C566 /* Assets.xcassets */,
 				41B768931F02406100D7C566 /* Main.storyboard */,
 				41B768981F02406100D7C566 /* LaunchScreen.storyboard */,
 				41B7689B1F02406100D7C566 /* Info.plist */,
-				8490C9F01F06B24E000213C7 /* Function.swift */,
 			);
 			path = "TinToc Shipper";
 			sourceTree = "<group>";
 		};
-		C267F38EDC33819E807C5C15 /* Frameworks */ = {
+		841195FC1F0B94CE005BCBEA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9E5D563A24478CE2DCFDE498 /* Pods_TinToc_Shipper.framework */,
+				841196061F0B9538005BCBEA /* BaseViewController.swift */,
+				841195FD1F0B94E4005BCBEA /* Define.swift */,
+				8490C9F01F06B24E000213C7 /* Function.swift */,
+				841195FE1F0B94E4005BCBEA /* Extension+Date.swift */,
+				841195FF1F0B94E4005BCBEA /* Extension+String.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		841196031F0B9514005BCBEA /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				841196041F0B9529005BCBEA /* DataConnect.swift */,
+			);
+			name = DataService;
+			sourceTree = "<group>";
+		};
+		84137EDA1F0A56E700542269 /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				841195F61F0B94AD005BCBEA /* UIButtonX.swift */,
+				841195FA1F0B94C3005BCBEA /* LineBottomLabel.swift */,
+				841196081F0B9627005BCBEA /* FloatRatingView.swift */,
+				841195F71F0B94AD005BCBEA /* UITextFieldLoginX.swift */,
+				841195F41F0B9477005BCBEA /* UIButtonX-nonanimate.swift */,
+			);
+			name = DesignableX;
+			sourceTree = "<group>";
+		};
+		84137EDB1F0A56F300542269 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84137EDE1F0A572600542269 /* MainScreenVC.swift */,
+				84137EE01F0A5B8C00542269 /* MenuVC.swift */,
+				84B10CEF1F0A764900024840 /* VC1.swift */,
+				84B10CF11F0A765900024840 /* VC2.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84137EDC1F0A56F900542269 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84137EDD1F0A56FF00542269 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A11E2EF5BB40C6DA61B631FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5EFEE93013626745A8B57DC /* Pods_TinToc_Shipper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41B7689E1F02406100D7C566 /* Build configuration list for PBXNativeTarget "TinToc Shipper" */;
 			buildPhases = (
-				C74C6F1FDAC3F92AD953F5D8 /* [CP] Check Pods Manifest.lock */,
+				1DCDD55B0D921A48920F1169 /* [CP] Check Pods Manifest.lock */,
 				41B768881F02406000D7C566 /* Sources */,
 				41B768891F02406000D7C566 /* Frameworks */,
 				41B7688A1F02406000D7C566 /* Resources */,
-				C3BAC468A56151F7A23DED1F /* [CP] Embed Pods Frameworks */,
-				2EB8DCCE35080A7B942CFBAE /* [CP] Copy Pods Resources */,
+				9B0BE5E1B134C3C610F72180 /* [CP] Embed Pods Frameworks */,
+				3105BA44DCC963A8A7DD0651 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,37 +250,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EB8DCCE35080A7B942CFBAE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3BAC468A56151F7A23DED1F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C74C6F1FDAC3F92AD953F5D8 /* [CP] Check Pods Manifest.lock */ = {
+		1DCDD55B0D921A48920F1169 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,6 +265,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		3105BA44DCC963A8A7DD0651 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B0BE5E1B134C3C610F72180 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinToc Shipper/Pods-TinToc Shipper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,9 +302,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41B768921F02406100D7C566 /* ViewController.swift in Sources */,
+				841196021F0B94E4005BCBEA /* Extension+String.swift in Sources */,
+				841195F91F0B94AD005BCBEA /* UITextFieldLoginX.swift in Sources */,
+				84137EDF1F0A572600542269 /* MainScreenVC.swift in Sources */,
 				41B768901F02406100D7C566 /* AppDelegate.swift in Sources */,
+				84B10CF01F0A764900024840 /* VC1.swift in Sources */,
+				841196071F0B9538005BCBEA /* BaseViewController.swift in Sources */,
+				841196091F0B9627005BCBEA /* FloatRatingView.swift in Sources */,
+				841196001F0B94E4005BCBEA /* Define.swift in Sources */,
+				84B10CF21F0A765900024840 /* VC2.swift in Sources */,
+				841195F81F0B94AD005BCBEA /* UIButtonX.swift in Sources */,
+				841195F51F0B9477005BCBEA /* UIButtonX-nonanimate.swift in Sources */,
+				841195FB1F0B94C3005BCBEA /* LineBottomLabel.swift in Sources */,
+				841196011F0B94E4005BCBEA /* Extension+Date.swift in Sources */,
 				8490C9F11F06B24E000213C7 /* Function.swift in Sources */,
+				841196051F0B9529005BCBEA /* DataConnect.swift in Sources */,
+				84137EE11F0A5B8C00542269 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +436,7 @@
 		};
 		41B7689F1F02406100D7C566 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B354F7A16BBD292D47801B4 /* Pods-TinToc Shipper.debug.xcconfig */;
+			baseConfigurationReference = E21E5AF40B92D499B577A753 /* Pods-TinToc Shipper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MP4JHA4J7N;
@@ -351,7 +451,7 @@
 		};
 		41B768A01F02406100D7C566 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54781BAD9689060DDF8C7E76 /* Pods-TinToc Shipper.release.xcconfig */;
+			baseConfigurationReference = E5231F441DF5B917ED2DE7C8 /* Pods-TinToc Shipper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MP4JHA4J7N;

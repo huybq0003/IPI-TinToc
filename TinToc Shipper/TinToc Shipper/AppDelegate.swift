@@ -7,15 +7,35 @@
 //
 
 import UIKit
+import SidePanel
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var sidePanelController: SidePanelController?
+    var vc1: UINavigationController?
+    var vc2: UINavigationController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        vc1 = UINavigationController(rootViewController: sb.instantiateViewController(withIdentifier: "VC1"))
+        vc2 = UINavigationController(rootViewController: sb.instantiateViewController(withIdentifier: "VC2"))
+        
+        let sc = sb.instantiateViewController(withIdentifier: "SideViewController")
+        
+        let svc = MySidePanelController(sideController: sc)
+        svc.selectedViewController = vc1
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = svc
+        self.window?.makeKeyAndVisible()
+        
+        self.sidePanelController = svc
         return true
     }
 
@@ -42,5 +62,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+class MySidePanelController: SidePanelController {
+    override func leftButton() -> UIButton {
+        let frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        let button = UIButton(frame: frame)
+        button.setImage(UIImage(named: "ic_menu"), for: .normal)
+        return button
+        
+    }
 }
 
