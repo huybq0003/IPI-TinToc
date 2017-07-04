@@ -54,10 +54,11 @@ extension LeftMenuViewController : UITableViewDelegate {
         case 1:
             let vc = mainStoryboard.instantiateViewController(withIdentifier: "ThuNhap_ViewController") as! ThuNhap_ViewController
             self.present(vc, animated: true, completion: nil)
-        
-        case 2:
-            let vc = mainStoryboard.instantiateViewController(withIdentifier: "NewOrder_ViewController") as! NewOrder_ViewController
+        case 3:
+            let vc = mainStoryboard.instantiateViewController(withIdentifier: "RatingViewController") as! RatingViewController
             self.present(vc, animated: true, completion: nil)
+        
+            
         default:
             print("select cell")
         }

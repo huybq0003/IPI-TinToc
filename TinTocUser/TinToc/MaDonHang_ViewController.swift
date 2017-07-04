@@ -21,7 +21,8 @@ class MaDonHang_ViewController: BaseViewController {
     
 
     @IBAction func abtnBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterVC: UIViewController {
+class RegisterVC: BaseViewController {
 
     @IBOutlet weak var nameLbl: UITextFieldLoginX!
     @IBOutlet weak var phoneLbl: UITextFieldLoginX!
@@ -20,6 +20,8 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var capcha: UITextFieldLoginX!
     
     @IBOutlet weak var capchaLbl: UILabel!
+    let flagKeyboard = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()

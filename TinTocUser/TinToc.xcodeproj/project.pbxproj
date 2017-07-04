@@ -29,6 +29,8 @@
 		4174FF841F0160BE0085A039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4174FF821F0160BE0085A039 /* Main.storyboard */; };
 		4174FF861F0160BE0085A039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4174FF851F0160BE0085A039 /* Assets.xcassets */; };
 		4174FF891F0160BE0085A039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4174FF871F0160BE0085A039 /* LaunchScreen.storyboard */; };
+		4176CC2E1F0A823D0024DDF3 /* HoaDon_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4176CC2D1F0A823D0024DDF3 /* HoaDon_ViewController.swift */; };
+		4176CC301F0B42D10024DDF3 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4176CC2F1F0B42D10024DDF3 /* RatingViewController.swift */; };
 		41B768A21F025CAA00D7C566 /* UITextFieldLoginX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B768A11F025CAA00D7C566 /* UITextFieldLoginX.swift */; };
 		41D412ED1F016455003E450D /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D412DA1F016455003E450D /* Define.swift */; };
 		41D412EE1F016455003E450D /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D412DB1F016455003E450D /* Extension+Date.swift */; };
@@ -77,6 +79,8 @@
 		4174FF851F0160BE0085A039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4174FF881F0160BE0085A039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4174FF8A1F0160BE0085A039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4176CC2D1F0A823D0024DDF3 /* HoaDon_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoaDon_ViewController.swift; sourceTree = "<group>"; };
+		4176CC2F1F0B42D10024DDF3 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		41B768A11F025CAA00D7C566 /* UITextFieldLoginX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldLoginX.swift; sourceTree = "<group>"; };
 		41D412DA1F016455003E450D /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		41D412DB1F016455003E450D /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
@@ -245,9 +249,11 @@
 				842D60301F054D2F007DD7F4 /* Login_Register */,
 				416E30551F034DAC00F6C1BA /* BaseViewController.swift */,
 				4174FF801F0160BE0085A039 /* MainViewController.swift */,
-				8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */,
 				416E30761F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift */,
 				41454BA91F0650A5005D22F4 /* NewOrder_ViewController.swift */,
+				4176CC2D1F0A823D0024DDF3 /* HoaDon_ViewController.swift */,
+				8490C9E11F0658CD000213C7 /* MaDonHang_ViewController.swift */,
+				4176CC2F1F0B42D10024DDF3 /* RatingViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -314,7 +320,7 @@
 				TargetAttributes = {
 					4174FF7A1F0160BE0085A039 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MP4JHA4J7N;
+						DevelopmentTeam = TDCT37QT5P;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -430,8 +436,10 @@
 				8490C9E71F065914000213C7 /* ThuNhap_ViewController.swift in Sources */,
 				41D412ED1F016455003E450D /* Define.swift in Sources */,
 				41B768A21F025CAA00D7C566 /* UITextFieldLoginX.swift in Sources */,
+				4176CC2E1F0A823D0024DDF3 /* HoaDon_ViewController.swift in Sources */,
 				416E30561F034DAC00F6C1BA /* BaseViewController.swift in Sources */,
 				4174FF7F1F0160BE0085A039 /* AppDelegate.swift in Sources */,
+				4176CC301F0B42D10024DDF3 /* RatingViewController.swift in Sources */,
 				41D413211F016589003E450D /* Config.swift in Sources */,
 				416E30771F03ADFB00F6C1BA /* BoLoc_MainShop_ViewController.swift in Sources */,
 				842D60341F054D6F007DD7F4 /* RegisterVC.swift in Sources */,
@@ -568,8 +576,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TinToc/TinToc.entitlements;
-				DEVELOPMENT_TEAM = MP4JHA4J7N;
+				DEVELOPMENT_TEAM = TDCT37QT5P;
 				INFOPLIST_FILE = TinToc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huybui.TinToc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,8 +592,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TinToc/TinToc.entitlements;
-				DEVELOPMENT_TEAM = MP4JHA4J7N;
+				DEVELOPMENT_TEAM = TDCT37QT5P;
 				INFOPLIST_FILE = TinToc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huybui.TinToc;
 				PRODUCT_NAME = "$(TARGET_NAME)";

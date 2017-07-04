@@ -10,26 +10,45 @@ import UIKit
 
 class NewOrder_ViewController: BaseViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    let flagKeyboard = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func abtnBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func abtnNext(_ sender: Any) {
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "HoaDon_ViewController") as! HoaDon_ViewController
+        self.present(vc, animated: true, completion: nil)
     }
-    */
+    
+    
 
 }
+
+extension NewOrder_ViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.4, animations: {
+            let point = textField.frame.origin.y
+            self.scrollView.contentOffset.y = point - 50
+        }, completion: nil)
+        
+        
+    }
+    
+    
+    
+    
+}
+
+
+
+

@@ -82,6 +82,7 @@ class UITextFieldLoginX: UITextField {
     
     @IBInspectable var bottomLine: Bool = false {
         didSet {
+            
             let bottomLine = CALayer()
             bottomLine.frame = CGRect(x: 0.0, y: self.frame.height-1 , width: self.frame.width, height: 1.0)
             bottomLine.backgroundColor = self.tintColor.cgColor

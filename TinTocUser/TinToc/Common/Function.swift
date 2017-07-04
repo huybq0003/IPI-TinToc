@@ -296,7 +296,11 @@ func callNumber(_ phoneNumber:String) {
     if let phoneCallURL:URL = URL(string: "tel://\(phoneNumber)") {
         let application:UIApplication = UIApplication.shared
         if (application.canOpenURL(phoneCallURL)) {
-            application.open(phoneCallURL, options:[:] , completionHandler: nil)
+            if #available(iOS 10.0, *) {
+                application.open(phoneCallURL, options:[:] , completionHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 }

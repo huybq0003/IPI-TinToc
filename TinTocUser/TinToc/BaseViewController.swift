@@ -10,7 +10,6 @@ import UIKit
 import SlideMenuControllerSwift
 
 class BaseViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,12 +32,42 @@ class BaseViewController: UIViewController {
             {
                 if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                     if self.view.frame.origin.y == 0{
-                        self.view.frame.origin.y -= keyboardSize.height*0.3
+                        UIView.animate(withDuration: 0.4, animations: {
+                            self.view.frame.origin.y -= keyboardSize.height*0.3
+                        }, completion: nil)
+                        
                     }
                 }
             }
             
+        }else if let vc = self as? NewOrder_ViewController
+        {
+            if vc.flagKeyboard == false
+            {
+                if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    if self.view.frame.origin.y == 0{
+                        UIView.animate(withDuration: 0.4, animations: {
+                            self.view.frame.origin.y -= keyboardSize.height*0.5
+                        }, completion: nil)
+                        
+                    }
+                }
+            }
+        }else if let vc = self as? RegisterVC
+        {
+            if vc.flagKeyboard == false
+            {
+                if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    if self.view.frame.origin.y == 0{
+                        UIView.animate(withDuration: 0.4, animations: {
+                            self.view.frame.origin.y -= keyboardSize.height*0.3
+                        }, completion: nil)
+                        
+                    }
+                }
+            }
         }
+
     }
     
     
@@ -50,12 +79,43 @@ class BaseViewController: UIViewController {
             if vc.flagKeyboard == false
             {
                 if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    
                     if self.view.frame.origin.y != 0{
-                        self.view.frame.origin.y += keyboardSize.height*0.3
+                        UIView.animate(withDuration: 0.4, animations: {
+                            self.view.frame.origin.y += keyboardSize.height*0.3
+                        }, completion: nil)
+                        
                     }
                 }
             }
+        }else if let vc = self as? NewOrder_ViewController
+        {
+            if vc.flagKeyboard == false
+            {
+                if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    if self.view.frame.origin.y != 0{
+                        UIView.animate(withDuration: 0.4, animations: {
+                            self.view.frame.origin.y += keyboardSize.height*0.5
+                        }, completion: nil)
+                                            }
+                }
+            }
+ 
+        }else if let vc = self as? RegisterVC
+        {
+            if vc.flagKeyboard == false
+            {
+                if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                    if self.view.frame.origin.y != 0{
+                        UIView.animate(withDuration: 0.4, animations: {
+                            self.view.frame.origin.y += keyboardSize.height*0.3
+                        }, completion: nil)
+                    }
+                }
+            }
+            
         }
+
    
     }
     

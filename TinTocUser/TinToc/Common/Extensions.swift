@@ -30,10 +30,16 @@ extension UIView {
         let radius = self.frame.height / 2
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
+        
+        self.layer.masksToBounds = false
+        self.clipsToBounds = true
+
+        
+        
     }
     func setShadowBorder() {
         self.layer.masksToBounds = false
-        // self.clipsToBounds = true
+        self.clipsToBounds = true
         let radius = self.frame.width / 2
         self.layer.cornerRadius = radius
         self.layer.borderColor = UIColor.white.cgColor
